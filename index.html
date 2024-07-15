@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <main class="container">
+        <section class="img">
+            <img src="assets/img/personal-trainer-illustration.svg">
+        </section>
+
+        <section class="calculator">
+            <form id="form">
+                <h1>BMI Calculator</h1>
+
+                <div class="input-box">
+                    <label for="weight">Weight in Kg</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" step=".01" id="weight" name="weight" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+    
+                <div class="input-box">
+                    <label for="height">Height in meters</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" step=".01" id="height" name="height" required>
+                        <span>m</span>
+                    </div>
+                </div>
+
+                <button class="calculate" id="calculate">Calculate</button>
+            </form>
+
+            <div class="info hidden" id="info">
+                <div class="result">
+                    <div class="bmi" id="bmi">
+                        <span class="value" id="value"></span>
+                        <span>Your BMI</span>
+                    </div>
+                    <div class="description" id="description">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="more-info">
+                    <a href="#">More information about BMI
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
